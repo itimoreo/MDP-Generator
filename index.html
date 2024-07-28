@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
     <div class="container">
         <h1>Generate a  <br> <span>random password</span></h1>
@@ -15,9 +13,12 @@
             <input type="text" id="password" placeholder="Password">
             <img src="./images/copy.png" onclick="copyPassword()" >
         </div>
+        <div class="length-input">
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" value="26" min="1">
+        </div>
         <button onclick="generatePassword()"> <img src="./images/generate.png" id="">Generate Password</button>
     </div>
     <script src="./index.js"></script>
 </body>
-
 </html>
